@@ -4,6 +4,6 @@ define("USERNAME", "root");
 define("PASSWORD", "");
 define("DATABASE", "film");
 
-define("BASE_URL","url_path");  
+define("BASE_URL","your_url");  
 
 define("DEFAULT_CONTROLLER","film");

@@ -61,7 +61,7 @@ class film_m{
     function deleteFilmById($id){
 		$requete="DELETE FROM film
 		          WHERE idFilm=$id
-		          LIMIT 1;";
+		          ";
     	try {
 			$nbRes = $this->db->exec($requete);
 			return $nbRes;
@@ -100,21 +100,16 @@ class film_m{
     }
 
  	function createFilm($data){
-    	$requete="INSERT INTO film 
-    	          VALUES ('', :title, :dateSortie, :productor, :idGenre, :duration)";
-
-    	/*$requete="INSERT INTO produit (id,id_type,nom,prix,photo) VALUES 
-    	(NULL,".$data['id_type'].",'".$data['nom']."','".$data['prix']."','".$data['photo']."');";
-    	print_r($data);*/
+    	$requete="INSERT INTO film VALUES (NULL, :titleFilm, :dateFilm, :productorFilm, :idGenre, :durationFilm)";
     	try {
     		$prep=$this->db->prepare($requete);
-    		$prep->bindParam(':title', $data['title'], PDO::PARAM_STR);
-    		$prep->bindParam(':dateSortie', $data['dateSortie'], PDO::PARAM_INT);
-    		$prep->bindParam(':productor', $data['productor'], PDO::PARAM_STR);
+    		$prep->bindParam(':titleFilm', $data['title'], PDO::PARAM_STR);
+    		$prep->bindParam(':dateFilm', $data['date'], PDO::PARAM_STR);
+    		$prep->bindParam(':productorFilm', $data['productor'], PDO::PARAM_STR);
     		$prep->bindParam(':idGenre', $data['idGenre'], PDO::PARAM_STR);
-            $prep->bindParam(':duration', $data['duration'], PDO::PARAM_STR);
+            $prep->bindParam(':durationFilm', $data['duration'], PDO::PARAM_STR);
 			$prep->execute();
-			$nbRes = $this->db->exec($requete);
+		//	$nbRes = $this->db->exec($requete);
 		} catch ( Exception $e ) {
 				echo "Error method createFilm : ", $e->getMessage();
 			}

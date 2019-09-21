@@ -25,7 +25,7 @@ if(isset($data['idFilm'])){
     </label>
     
     <label>Date 
-	<input name="dateFilm"  type="text"  size="18" placeholder="YYYY-MM-DD"
+	<input name="dateFilm"  type="date"  size="18" placeholder="YYYY-MM-DD"
 	value="<?php if(isset($data['dateFilm'])) echo $data['dateFilm']; ?>"/>
 	<?php if(isset($errors['date']))  	echo '<small class="error">'.$errors['date'].'</small>'; ?>
     </label>

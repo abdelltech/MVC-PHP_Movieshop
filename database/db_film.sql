@@ -70,15 +70,12 @@ INSERT INTO `film` (`idFilm`, `titleFilm`, `dateFilm`, `productorFilm`, `idGenre
 (8, 'Psychose', '1960-11-02', 'Alfred Hitchcock', 6, 125),
 (9, 'Toy Story', '1996-03-27', 'John Lasseter', 5, 90),
 (10, 'Shrek', '2001-07-04', 'Andrew Adamson ', 5, 90),
-(11, 'La Communauté de l anneau', '2001-12-19', 'Peter Jackson', 4, 150),
-(12, 'Les Deux Tours', '2002-12-18', 'Peter Jackson', 4, 152),
-(13, 'Le Retour du roi', '2003-12-17', 'Peter Jackson', 4, 149),
+(11, 'Les Deux Tours', '2002-12-18', 'Peter Jackson', 4, 152),
+(12, 'Le Retour du roi', '2003-12-17', 'Peter Jackson', 4, 149),
+(13, 'Harry Potter et la Coupe de feu', '2005-11-30', 'Mike Newell', 4, 125),
 (14, 'Inception', '2010-07-08', 'Christopher Nolan', 2, 90),
 (15, 'Warrior', '2011-09-14', 'Gavin O    Connor', 3, 120),
-(16, 'Harry Potter à l école des sorciers', '2001-12-05', 'Chris Columbus', 4, 125),
-(17, 'Harry Potter et la Chambre des secrets', '2002-12-04', 'Chris Columbus', 4, 125),
-(18, 'Harry Potter et le Prisonnier d Azkaban', '2004-06-02', 'Alfonso Cuarón', 4, 125),
-(19, 'Harry Potter et la Coupe de feu', '2005-11-30', 'Mike Newell', 4, 125);
+(16, 'Harry Potter et la Chambre des secrets', '2002-12-04', 'Chris Columbus', 4, 125);
 
 -- --------------------------------------------------------
 

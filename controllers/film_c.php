@@ -63,16 +63,11 @@ class film
         
         
         
-    $data['dateSortie']=htmlspecialchars($_POST['dateFilm']);
-     if (!preg_match("/^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$/",$data['dateSortie']))
-    {
-        $errors['date']='Date format is not accepted try YYYY-MM-DD';
-    }   
-        
-        
-    $data['Productor']=htmlspecialchars($_POST['productorFilm']);
-    if ((preg_match("/([^A-Za-z ])/",$data['Productor']))) $errors['productor']='The title must contain only characters ';
-    if(strlen($data['Productor'])<2)$errors['productor']='The Productor\'s name must contain atleast 2 letters';
+    $data['date']=htmlspecialchars($_POST['dateFilm']);
+            
+    $data['productor']=htmlspecialchars($_POST['productorFilm']);
+    if ((preg_match("/([^A-Za-z ])/",$data['productor']))) $errors['productor']='The title must contain only characters ';
+    if(strlen($data['productor'])<2)$errors['productor']='The Productor\'s name must contain atleast 2 letters';
         
         
         
