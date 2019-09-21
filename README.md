@@ -1,5 +1,4 @@
-# MVC-PHP_Movieshop
-Movieshop - Application CRUD in MVC PHP
+# MVC PHP - Movieshop
 
 - Application CRUD
 - Foundation Framework
@@ -8,7 +7,7 @@ Movieshop - Application CRUD in MVC PHP
 - SQL Joins
 
 # Conception
-![conception](concpetion.png)
+![conception](conception.png)
 
 # Configuration
 
