@@ -1,4 +1,4 @@
-# MVC PHP - Movieshop
+# MVC PHP - Movie Shop
 
 - Application CRUD
 - Foundation Framework
